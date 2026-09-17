@@ -4,7 +4,7 @@
  * Purpose: Skeleton implementation of the cmpfs comparison API.
  *
  * Created: ... 2010 ...
- * Updated: 21st August 2026
+ * Updated: 17th September 2026
  *
  * Home:    https://github.com/synesissoftware/cmpfs
  *
@@ -71,6 +71,7 @@ cmpfs_compare_binary_files(
 
     ((void)path1);
     ((void)path2);
+    ((void)flags);
 
     if (NULL != result)
     {
