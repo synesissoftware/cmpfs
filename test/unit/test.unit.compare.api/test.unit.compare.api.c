@@ -4,7 +4,7 @@
  * Purpose: Unit tests for the cmpfs skeleton comparison API.
  *
  * Created: 21st August 2026
- * Updated: 21st August 2026
+ * Updated: 17th September 2026
  *
  * ////////////////////////////////////////////////////////////////////// */
 
@@ -25,7 +25,7 @@ static void
 test_compare_binary_files_is_stub(void)
 {
     cmpfs_comparison_result_t   result;
-    int const                   r = cmpfs_compare_binary_files("a", "b", &result);
+    int const                   r = cmpfs_compare_binary_files("a", "b", CMPFS_F_NONE, &result);
 
     XTESTS_TEST_INTEGER_EQUAL(ENOSYS, r);
     XTESTS_TEST_INTEGER_EQUAL(0, result.equal);
@@ -36,7 +36,7 @@ test_compare_binary_files_is_stub(void)
 static void
 test_compare_binary_files_accepts_null_result(void)
 {
-    int const r = cmpfs_compare_binary_files("a", "b", NULL);
+    int const r = cmpfs_compare_binary_files("a", "b", CMPFS_F_NONE, NULL);
 
     XTESTS_TEST_INTEGER_EQUAL(ENOSYS, r);
 }
