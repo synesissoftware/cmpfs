@@ -178,7 +178,7 @@ jobs:
           #endif
           int main(void)
           {
-              return (ENOSYS == cmpfs_compare_binary_files("a", "b", 0)) ? 0 : 1;
+              return (ENOSYS == cmpfs_compare_binary_files("a", "b", 0, NULL)) ? 0 : 1;
           }
           EOF
           if [ "${{ matrix.c_compiler }}" = "cl" ]; then

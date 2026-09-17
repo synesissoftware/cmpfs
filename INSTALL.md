@@ -91,7 +91,7 @@ The primary choice for installation is by use of **CMake**.
 
       int main(void)
       {
-          int const r = cmpfs_compare_binary_files("a.bin", "b.bin", NULL);
+          int const r = cmpfs_compare_binary_files("a.bin", "b.bin", 0, NULL);
 
           printf("status %d (ENOSYS=%d while skeleton)\n", r, ENOSYS);
 
