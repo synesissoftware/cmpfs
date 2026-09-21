@@ -4,7 +4,7 @@
  * Purpose: Main C header for the cmpfs library.
  *
  * Created: ... 2010 ...
- * Updated: 17th September 2026
+ * Updated: 21st September 2026
  *
  * Home:    https://github.com/synesissoftware/cmpfs
  *
