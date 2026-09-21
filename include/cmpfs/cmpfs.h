@@ -4,7 +4,7 @@
  * Purpose: Main C header for the cmpfs library.
  *
  * Created: ... 2010 ...
- * Updated: 17th September 2026
+ * Updated: 21st September 2026
  *
  * Home:    https://github.com/synesissoftware/cmpfs
  *
@@ -98,7 +98,8 @@
 #define CMPFS_VER_0_0_1_ALPHA_1     0x00000141
 
 #ifndef CMPFS_DOCUMENTATION_SKIP_SECTION
-# define CMPFS_VER_REVISION         CMPFS_VER_PATCH
+# define CMPFS_VER_REVISION                                 CMPFS_VER_PATCH
+# define CMPFS_VER_AB                                       CMPFS_VER_ALPHABETA
 #endif /* !CMPFS_DOCUMENTATION_SKIP_SECTION */
 
 
