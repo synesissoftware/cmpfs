@@ -82,7 +82,7 @@
 #define CMPFS_VER_MAJOR             0
 #define CMPFS_VER_MINOR             0
 #define CMPFS_VER_PATCH             1
-#define CMPFS_VER_ALPHABETA         0x42
+#define CMPFS_VER_ALPHABETA         0x41
 
 #define CMPFS_VER \
     (0\
@@ -96,7 +96,6 @@
  * Composite version number for 0.0.1-alpha1
  */
 #define CMPFS_VER_0_0_1_ALPHA_1     0x00000141
-#define CMPFS_VER_0_0_1_ALPHA_2     0x00000142
 
 #ifndef CMPFS_DOCUMENTATION_SKIP_SECTION
 # define CMPFS_VER_REVISION                                 CMPFS_VER_PATCH
