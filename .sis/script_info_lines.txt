@@ -1,0 +1,2 @@
+cmpfs - compare file-system entities, for C and C++
+Copyright (c) 2010-2026, Matthew Wilson and Synesis Information Systems
