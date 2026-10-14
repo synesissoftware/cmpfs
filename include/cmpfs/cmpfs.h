@@ -92,15 +92,15 @@
         |   (   CMPFS_VER_RELSTATUS   <<  0   ) \
     )
 
-/** \def CMPFS_VER_0_0_1_ALPHA_1
- * Composite version number for 0.0.1-alpha1
- */
-#define CMPFS_VER_0_0_1_ALPHA_1     0x00000141
+#ifndef CMPFS_DOCUMENTATION_SKIP_SECTION
+# define CMPFS_VER_0_0_1_ALPHA_1                            0x00000141
+# define CMPFS_VER_0_0_1_ALPHA_2                            0x00000142
+#endif /* !CMPFS_DOCUMENTATION_SKIP_SECTION */
 
 #ifndef CMPFS_DOCUMENTATION_SKIP_SECTION
 # define CMPFS_VER_REVISION                                 CMPFS_VER_PATCH
 # define CMPFS_VER_AB                                       CMPFS_VER_RELSTATUS
-# define CMPFS_VER_ALPHABETA                               CMPFS_VER_RELSTATUS
+# define CMPFS_VER_ALPHABETA                                CMPFS_VER_RELSTATUS
 #endif /* !CMPFS_DOCUMENTATION_SKIP_SECTION */
 
 
