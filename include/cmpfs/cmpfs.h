@@ -4,7 +4,7 @@
  * Purpose: Main C header for the cmpfs library.
  *
  * Created: ... 2010 ...
- * Updated: 21st September 2026
+ * Updated: 14th October 2026
  *
  * Home:    https://github.com/synesissoftware/cmpfs
  *
@@ -56,7 +56,7 @@
 # define CMPFS_VER_CMPFS_H_CMPFS_MAJOR      1
 # define CMPFS_VER_CMPFS_H_CMPFS_MINOR      1
 # define CMPFS_VER_CMPFS_H_CMPFS_REVISION   2
-# define CMPFS_VER_CMPFS_H_CMPFS_EDIT       13
+# define CMPFS_VER_CMPFS_H_CMPFS_EDIT       14
 #endif /* !CMPFS_DOCUMENTATION_SKIP_SECTION */
 
 /** \def CMPFS_VER_MAJOR
@@ -82,24 +82,25 @@
 #define CMPFS_VER_MAJOR             0
 #define CMPFS_VER_MINOR             0
 #define CMPFS_VER_PATCH             1
-#define CMPFS_VER_ALPHABETA         0x41
+#define CMPFS_VER_RELSTATUS         0x42
 
 #define CMPFS_VER \
     (0\
         |   (   CMPFS_VER_MAJOR       << 24   ) \
         |   (   CMPFS_VER_MINOR       << 16   ) \
         |   (   CMPFS_VER_PATCH       <<  8   ) \
-        |   (   CMPFS_VER_ALPHABETA   <<  0   ) \
+        |   (   CMPFS_VER_RELSTATUS   <<  0   ) \
     )
 
-/** \def CMPFS_VER_0_0_1_ALPHA_1
- * Composite version number for 0.0.1-alpha1
- */
-#define CMPFS_VER_0_0_1_ALPHA_1     0x00000141
+#ifndef CMPFS_DOCUMENTATION_SKIP_SECTION
+# define CMPFS_VER_0_0_1_ALPHA_1                            0x00000141
+# define CMPFS_VER_0_0_1_ALPHA_2                            0x00000142
+#endif /* !CMPFS_DOCUMENTATION_SKIP_SECTION */
 
 #ifndef CMPFS_DOCUMENTATION_SKIP_SECTION
 # define CMPFS_VER_REVISION                                 CMPFS_VER_PATCH
-# define CMPFS_VER_AB                                       CMPFS_VER_ALPHABETA
+# define CMPFS_VER_AB                                       CMPFS_VER_RELSTATUS
+# define CMPFS_VER_ALPHABETA                                CMPFS_VER_RELSTATUS
 #endif /* !CMPFS_DOCUMENTATION_SKIP_SECTION */
 
 

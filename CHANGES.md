@@ -1,6 +1,14 @@
 # cmpfs - Changes <!-- omit in toc -->
 
 
+## 0.0.1-alpha2 - 14th October 2026
+
+* Synced tip **cmake-helpers** runners;
+* Migrated `CMPFS_VER_ALPHABETA` to `CMPFS_VER_RELSTATUS` (aliases retained);
+* Phase **4c** polish: `PROGRAM_NAME` **test.scratch.versions**;
+* CI hygiene: **install-sis-deps**, execute-bit restore, Windows **.cmd** dogfood;
+
+
 ## 0.0.1-alpha1 - 21st September 2026
 
 * Created a Synesis-style **C** library skeleton: version macros, **CMake** packaging, **.sis** helper-script identity, modular GitHub Actions CI (**ci.yml** / **ci-cell.yml**), and install-smoke as a C consumer;
