@@ -5,7 +5,8 @@
 # Purpose:  Top-level CMake lists file for cmpfs
 #
 # Created:  21st August 2026
-# Updated:  21st August 2026
+# Updated:  27th Octoberq
+ 2026
 #
 # ######################################################################## #
 
@@ -157,11 +158,16 @@ endif()
 
 if(BUILD_TESTING)
 
-	set(xTests_REQUIRED_VERSION_ 0.26.3)
+	set(xTests_REQUIRED_VERSION_ 0.28)
 
 	find_package(xTests ${xTests_REQUIRED_VERSION_} REQUIRED)
 
 	message("-- CMake package xTests found (version ${xTests_VERSION}; ${xTests_REQUIRED_VERSION_} requested)")
+
+	add_compile_definitions(
+		HAS_xTests
+		HAS_XTESTS
+	)
 endif(BUILD_TESTING)
 
 

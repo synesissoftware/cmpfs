@@ -1,6 +1,11 @@
 # cmpfs - Changes <!-- omit in toc -->
 
 
+## 0.0.1-alpha3 - 27th October 2026
+
+* Defined `HAS_xTests` and `HAS_XTESTS` when **xTests** is detected;
+
+
 ## 0.0.1-alpha2 - 14th October 2026
 
 * Synced tip **cmake-helpers** runners;
