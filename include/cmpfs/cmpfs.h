@@ -95,6 +95,7 @@
 #ifndef CMPFS_DOCUMENTATION_SKIP_SECTION
 # define CMPFS_VER_0_0_1_ALPHA_1                            0x00000141
 # define CMPFS_VER_0_0_1_ALPHA_2                            0x00000142
+# define CMPFS_VER_0_0_1_ALPHA_3                            0x00000143
 #endif /* !CMPFS_DOCUMENTATION_SKIP_SECTION */
 
 #ifndef CMPFS_DOCUMENTATION_SKIP_SECTION

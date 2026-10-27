@@ -5,8 +5,7 @@
 # Purpose:  Top-level CMake lists file for cmpfs
 #
 # Created:  21st August 2026
-# Updated:  27th Octoberq
- 2026
+# Updated:  27th October 2026
 #
 # ######################################################################## #
 
@@ -149,6 +148,12 @@ if(BUILD_TESTING)
 		get_filename_component(STLSOFT_INCLUDE_DIR "${STLSOFT_INCLUDE_DIR}" ABSOLUTE)
 
 		include_directories(${STLSOFT_INCLUDE_DIR})
+	endif()
+
+	if(DEFINED STLSOFT_INCLUDE_DIR OR DEFINED STLSoft_FOUND)
+
+		add_compile_definitions(HAS_STLSOFT)
+		add_compile_definitions(HAS_STLSoft)
 	endif()
 endif()
 

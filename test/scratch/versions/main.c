@@ -1,15 +1,23 @@
 /* /////////////////////////////////////////////////////////////////////////
  * File:    test/scratch/versions/main.c
  *
- * Purpose: Prints cmpfs composite version.
+ * Purpose: Prints cmpfs composite version and efferent dependencies.
  *
  * Created: 17th September 2026
- * Updated: 19th October 2026
+ * Updated: 27th October 2026
  *
  * ////////////////////////////////////////////////////////////////////// */
 
 
 #include <cmpfs/cmpfs.h>
+
+#ifdef HAS_STLSoft
+# include <stlsoft/stlsoft.h>
+#endif
+
+#ifdef HAS_xTests
+# include <xtests/xtests.h>
+#endif
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -41,6 +49,8 @@ version(
 
 int main(int argc, char* argv[])
 {
+    size_t efferent_counts = 0;
+
     ((void)&argc);
     ((void)&argv);
 
@@ -49,6 +59,28 @@ int main(int argc, char* argv[])
 
         version(stdout, "", "cmpfs", "CMPFS_VER", libver);
     }
+
+#ifdef HAS_STLSoft
+
+    (0 == efferent_counts++) && fputs("\nefferent dependencies:\n", stdout);
+
+    {
+        unsigned const libver = (unsigned)_STLSOFT_VER;
+
+        version(stdout, "\t", "STLSoft", "_STLSOFT_VER", libver);
+    }
+#endif
+
+#ifdef HAS_xTests
+
+    (0 == efferent_counts++) && fputs("\nefferent dependencies:\n", stdout);
+
+    {
+        unsigned const libver = (unsigned)_XTESTS_VER;
+
+        version(stdout, "\t", "xTests", "_XTESTS_VER", libver);
+    }
+#endif
 
     return EXIT_SUCCESS;
 }
