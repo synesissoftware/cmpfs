@@ -5,7 +5,7 @@
 # Purpose:  Top-level CMake lists file for cmpfs
 #
 # Created:  21st August 2026
-# Updated:  21st August 2026
+# Updated:  27th October 2026
 #
 # ######################################################################## #
 
@@ -149,6 +149,12 @@ if(BUILD_TESTING)
 
 		include_directories(${STLSOFT_INCLUDE_DIR})
 	endif()
+
+	if(DEFINED STLSOFT_INCLUDE_DIR OR DEFINED STLSoft_FOUND)
+
+		add_compile_definitions(HAS_STLSOFT)
+		add_compile_definitions(HAS_STLSoft)
+	endif()
 endif()
 
 
@@ -157,11 +163,16 @@ endif()
 
 if(BUILD_TESTING)
 
-	set(xTests_REQUIRED_VERSION_ 0.26.3)
+	set(xTests_REQUIRED_VERSION_ 0.28)
 
 	find_package(xTests ${xTests_REQUIRED_VERSION_} REQUIRED)
 
 	message("-- CMake package xTests found (version ${xTests_VERSION}; ${xTests_REQUIRED_VERSION_} requested)")
+
+	add_compile_definitions(
+		HAS_xTests
+		HAS_XTESTS
+	)
 endif(BUILD_TESTING)
 
 
