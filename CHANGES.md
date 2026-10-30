@@ -1,6 +1,12 @@
 # cmpfs - Changes <!-- omit in toc -->
 
 
+## 0.0.1-alpha4 - 31st October 2026
+
+* testing:
+  * `File:` labels under **test** name the project-relative path;
+
+
 ## 0.0.1-alpha3 - 27th October 2026
 
 * Defined `HAS_xTests` and `HAS_XTESTS` when **xTests** is detected;
