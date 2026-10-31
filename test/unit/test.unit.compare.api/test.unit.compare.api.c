@@ -1,10 +1,10 @@
 /* /////////////////////////////////////////////////////////////////////////
- * File:    test.unit.compare.api.c
+ * File:    test/unit/test.unit.compare.api/test.unit.compare.api.c
  *
  * Purpose: Unit tests for the cmpfs skeleton comparison API.
  *
  * Created: 21st August 2026
- * Updated: 17th September 2026
+ * Updated: 30th October 2026
  *
  * ////////////////////////////////////////////////////////////////////// */
 
