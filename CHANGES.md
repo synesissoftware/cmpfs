@@ -1,7 +1,7 @@
 # cmpfs - Changes <!-- omit in toc -->
 
 
-## 0.0.1-alpha4 - 31st October 2026
+## 0.0.1-alpha4 - 1st November 2026
 
 * testing:
   * `File:` labels under **examples** name the project-relative path;
