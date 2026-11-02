@@ -1,6 +1,15 @@
 # cmpfs - Changes <!-- omit in toc -->
 
 
+## 0.0.1-alpha5 - 2nd November 2026
+
+* version:
+  * added `CMPFS_VER_0_0_1_ALPHA_5`;
+
+* build:
+  * **STLSoft** minimum is **1.11.5**;
+  * **xTests** minimum is **0.28.2**;
+
 ## 0.0.1-alpha4 - 1st November 2026
 
 * testing:
