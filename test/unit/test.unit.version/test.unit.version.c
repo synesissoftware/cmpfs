@@ -4,7 +4,7 @@
  * Purpose: Unit tests for cmpfs version macros.
  *
  * Created: 21st August 2026
- * Updated: 2nd November 2026
+ * Updated: 6th November 2026
  *
  * ////////////////////////////////////////////////////////////////////// */
 
@@ -22,7 +22,7 @@ test_version_components(void)
     XTESTS_TEST_INTEGER_EQUAL(0, CMPFS_VER_MAJOR);
     XTESTS_TEST_INTEGER_EQUAL(0, CMPFS_VER_MINOR);
     XTESTS_TEST_INTEGER_EQUAL(1, CMPFS_VER_PATCH);
-    XTESTS_TEST_INTEGER_EQUAL(0x45, CMPFS_VER_ALPHABETA);
+    XTESTS_TEST_INTEGER_EQUAL(0x46, CMPFS_VER_ALPHABETA);
     XTESTS_TEST_INTEGER_EQUAL(CMPFS_VER_PATCH, CMPFS_VER_REVISION);
 }
 

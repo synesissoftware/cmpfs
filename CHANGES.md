@@ -1,6 +1,14 @@
 # cmpfs - Changes <!-- omit in toc -->
 
 
+## 0.0.1-alpha6 - 6th November 2026
+
+* version:
+  * added `CMPFS_VER_0_0_1_ALPHA_6`;
+* build:
+  * CI installs **woad** before **xTests**, which **xTests** 0.29 requires;
+
+
 ## 0.0.1-alpha5 - 2nd November 2026
 
 * version:
