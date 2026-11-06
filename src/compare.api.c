@@ -1,10 +1,10 @@
 /* /////////////////////////////////////////////////////////////////////////
- * File:    compare.api.c
+ * File:    src/compare.api.c
  *
  * Purpose: Skeleton implementation of the cmpfs comparison API.
  *
  * Created: ... 2010 ...
- * Updated: 17th September 2026
+ * Updated: 6th November 2026
  *
  * Home:    https://github.com/synesissoftware/cmpfs
  *

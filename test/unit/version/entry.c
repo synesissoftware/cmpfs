@@ -1,5 +1,5 @@
 /* /////////////////////////////////////////////////////////////////////////
- * File:    test/unit/test.unit.version/test.unit.version.c
+ * File:    test/unit/version/entry.c
  *
  * Purpose: Unit tests for cmpfs version macros.
  *
@@ -63,7 +63,6 @@ main(int argc, char* argv[])
 
     return retCode;
 }
-
 
 /* ///////////////////////////// end of file //////////////////////////// */
 
