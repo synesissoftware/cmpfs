@@ -1,10 +1,10 @@
 /* /////////////////////////////////////////////////////////////////////////
- * File:    test/unit/test.unit.compare.api/test.unit.compare.api.c
+ * File:    test/unit/test.unit.compare.api/entry.c
  *
  * Purpose: Unit tests for the cmpfs skeleton comparison API.
  *
  * Created: 21st August 2026
- * Updated: 30th October 2026
+ * Updated: 6th November 2026
  *
  * ////////////////////////////////////////////////////////////////////// */
 
@@ -65,7 +65,7 @@ main(int argc, char* argv[])
 
     XTESTS_COMMANDLINE_PARSEVERBOSITY(argc, argv, &verbosity);
 
-    if (XTESTS_START_RUNNER("test.unit.compare.api", verbosity))
+    if (XTESTS_START_RUNNER(__FILE__, verbosity))
     {
         XTESTS_RUN_CASE(test_compare_binary_files_is_stub);
         XTESTS_RUN_CASE(test_compare_binary_files_accepts_null_result);
@@ -78,7 +78,6 @@ main(int argc, char* argv[])
 
     return retCode;
 }
-
 
 /* ///////////////////////////// end of file //////////////////////////// */
 

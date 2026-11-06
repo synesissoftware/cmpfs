@@ -1,11 +1,11 @@
 /* /////////////////////////////////////////////////////////////////////////
- * File:    examples/c/example.c.1/example.c.1.c
+ * File:    examples/c/example.c.1/main.c
  *
  * Purpose: Example of cmpfs: report library version and the skeleton
  *          compare-API status.
  *
  * Created: 21st August 2026
- * Updated: 30th October 2026
+ * Updated: 6th November 2026
  *
  * ////////////////////////////////////////////////////////////////////// */
 
@@ -60,7 +60,6 @@ main(void)
 
     return EXIT_FAILURE;
 }
-
 
 /* ///////////////////////////// end of file //////////////////////////// */
 

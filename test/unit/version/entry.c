@@ -1,10 +1,10 @@
 /* /////////////////////////////////////////////////////////////////////////
- * File:    test/unit/test.unit.version/test.unit.version.c
+ * File:    test/unit/version/entry.c
  *
  * Purpose: Unit tests for cmpfs version macros.
  *
  * Created: 21st August 2026
- * Updated: 2nd November 2026
+ * Updated: 6th November 2026
  *
  * ////////////////////////////////////////////////////////////////////// */
 
@@ -22,7 +22,7 @@ test_version_components(void)
     XTESTS_TEST_INTEGER_EQUAL(0, CMPFS_VER_MAJOR);
     XTESTS_TEST_INTEGER_EQUAL(0, CMPFS_VER_MINOR);
     XTESTS_TEST_INTEGER_EQUAL(1, CMPFS_VER_PATCH);
-    XTESTS_TEST_INTEGER_EQUAL(0x45, CMPFS_VER_ALPHABETA);
+    XTESTS_TEST_INTEGER_EQUAL(0x46, CMPFS_VER_ALPHABETA);
     XTESTS_TEST_INTEGER_EQUAL(CMPFS_VER_PATCH, CMPFS_VER_REVISION);
 }
 
@@ -38,8 +38,8 @@ test_version_composite(void)
         );
 
     XTESTS_TEST_INTEGER_EQUAL(computed, CMPFS_VER);
-    XTESTS_TEST_INTEGER_EQUAL(CMPFS_VER_0_0_1_ALPHA_5, CMPFS_VER);
-    XTESTS_TEST_INTEGER_EQUAL(0x00000145, CMPFS_VER);
+    XTESTS_TEST_INTEGER_EQUAL(CMPFS_VER_0_0_1_ALPHA_6, CMPFS_VER);
+    XTESTS_TEST_INTEGER_EQUAL(0x00000146, CMPFS_VER);
 }
 
 
@@ -63,7 +63,6 @@ main(int argc, char* argv[])
 
     return retCode;
 }
-
 
 /* ///////////////////////////// end of file //////////////////////////// */
 
