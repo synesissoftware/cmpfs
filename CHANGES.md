@@ -7,6 +7,8 @@
   * added `CMPFS_VER_0_0_1_ALPHA_6`;
 * build:
   * CI installs **woad** before **xTests**, which **xTests** 0.29 requires;
+* testing / examples:
+  * renamed directories and implementation files to canonical standards;
 
 
 ## 0.0.1-alpha5 - 2nd November 2026
